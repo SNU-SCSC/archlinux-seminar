@@ -64,7 +64,12 @@ Bash를 설치하는 방법은 다음과 같습니다.
         5. 이젠 bash 프로그램을 cmd에서 치거나 검색해서 실행하면 될 것이다.
     - MSYS: Linux의 일부 개발자 툴들 (bash, gcc, pacman)등을 윈도우로 포팅한 것. http://www.msys2.org/ 에서 다운받아 설치하면 된다. Linux 셸과 유사한 환경을 제공하긴 하지만, 순수 Linux를 돌리는 것과는 차이가 많긴 하다.
 
-### 
+### Arch Linux 세팅의 번거로움 없이 한 번 사용해보고 싶은 경우
+
+Arch Linux 베이스를 기반으로 한 OS가 몇 개 있는데, 간편한 인스톨러가 제공된다.
+
+- Manjaro: https://manjaro.github.io/
+- Antergos: https://antergos.com/
 
 ## 세미나 계획
 
@@ -78,7 +83,30 @@ Bash를 설치하는 방법은 다음과 같습니다.
 - Linux란?
 - Arch Linux 소개
     - DIY, KISS, RTFM
-- // TODO
+- Arch Linux 설치 (Installation Guide 참고)
+    - 인터넷 연결 확인하기
+        - bash 기본 사용
+        - Wiki 읽기
+    - 시간 업데이트하기
+    - 디스크 파티션/포맷하기
+        - 파티션이란? 파티션 테이블이란? Swap File?
+    - 파일 시스템 마운트하기
+    - Pacman 미러 서버 세팅하기
+        - vim 과 함께하는 텍스트 편집
+    - Base package 설치하기
+        - pacman이란?
+    - fstab 파일 만들기
+        - bash와 vim 심화 사용
+    - chroot하기
+    - 타임존 세팅하기
+        - symlink란?
+    - Locale 세팅
+    - Hostname 세팅
+    - 네트워크 세팅
+    - 패스워드 설정하기
+    - 부트로더 설정하기 
+    - Reboot! Profit???
+- Vim / Bash 연습
 
 ### 2회차
 
@@ -102,8 +130,8 @@ Bash를 설치하는 방법은 다음과 같습니다.
     - Display(login) manager
 - Miscellaneous (ALSA (sound), Fonts, Alternative shells, ...)
 
-### 3회차 (미정)
+### 3회차 (아직 미정!!)
 
-도중에 해결을 못한게 있거나 문제가 발생한 분들을 위해 3번째 세미나를 열 수도 있습니다. 2회차까지 성공한 분들은 오시지 않아도 괜찮습니다. (몰론, 와서 다른 사람들을 도와주신다면 매우 고마워용)
+혹시 도중에 해결을 못한게 있거나 문제가 발생한 분들을 위해 3번째 세미나를 열 수도 있습니다. 2회차까지 성공한 분들은 오시지 않아도 괜찮습니다. (몰론, 와서 다른 사람들을 도와주신다면 매우 고마워용)
 
 그리고 만약 열린다면 이 때 노트북에 직접 Partition을 만들어서 설치하고 싶으신 분들을 위해서도 시간을 가지려고 합니다. 노트북 기종에 따라서 세팅해야 하는 것들이 달라질 수 있으니...
