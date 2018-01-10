@@ -87,7 +87,7 @@ With power comes great responsibility.
 
 - Man pages (``man <command>``), info (``info <keyword>``)
 - Arch Linux wiki (https://wiki.archlinux.org)
-    - 정말로 잘 되어있음. 문제의 70% 정도 이상을 여기서 해결할 수 있다!
+    - 정말로 잘 되어있음. 대다수의 문제를 여기서 해결할 수 있다!
 - GIYF (Google is your friend)
     - 구글링도 매우 중요한 능력이다. 네이버는 가급적이면 피하자...
 - 물론 이 세미나에서는 모르는게 있으면 얼마든지 도와드리겠지만... 구글링을 대신 해드리진 않습니다
@@ -164,11 +164,31 @@ See also Arch terminology#RTFM and the Installation guide.
 
 ---
 
+# 기타 쓰기 좋은 명령어들:
+
+- ``echo <string>``: 텍스트를 출력
+- ``cat <file>``: 파일을 출력
+- ``head, tail, sort, uniq, wc``: Filter 명령어들
+
+---
+
 # man
 
 해당 명령어에 대한 정보를 볼 수 있다.
 
 MAN IS YOUR BEST FRIEND
+
+---
+
+# Bash 심화: Wildcards
+
+---
+
+# Bash 심화: Filters
+
+---
+
+# Bash 심화: Pipes
 
 ---
 
@@ -217,15 +237,34 @@ folder3
 
 # 예제
 
-- 시스템 어딘가에 tls-ca-bundle.pem라는 파일이 존재한다. 이것을 찾아라.
-    - 힌트: 치트시트, Google, man, Arch Linux Wiki 등을 적절히 참고하자.
+치스시트, Google, man, Arch Linux Wiki등을 참고하여 다음을 수행하자.
+
+- 시스템 어딘가에 tls-ca-bundle.pem라는 파일이 존재한다. 이것의 위치를 찾아라.
 
 - 현재 시스템에 있는 C 소스 파일 (*.c 확장자를 가지는 파일)은 총 몇개인가?
 
-- (심화) 학생들의 성적이 들어있는 텍스트 파일 scores.txt이 있다. 다음 링크에서 다운로드를 받자. (어떻게 다운받는지는 안알랴줌) 
-    - 성적표 중간에 알 수 없는 오류로 인해서 몇 개의 항목이 중복되었다. 이 중복된 항목들을 없애서 scores_unique.txt에 저장하라.
-    - 1등부터 10등까지의 학생 이름을 한 줄씩 담고 있는 파일 top_ten.txt을 만들어라. (힌트: cut, sort를 영리하게 사용하면 된다.)
-    (힌트: awk '{ print $2 " " $1 }'를 통해 테이블의 첫번째와 두번째 열을 바꿀 수 있다.)
+---
+
+# 예제 (심화)
+- 학생들의 성적이 들어있는 텍스트 파일 scores.txt이 있다. 다음 링크에서 다운로드를 받자. (어떻게 다운받는지는 안알랴줌) https://raw.githubusercontent.com/SNU-SCSC/archlinux-seminar/master/exercises/scores.txt
+
+    - 성적표 중간에 알 수 없는 오류로 인해서 몇 개의 항목이 중복되었다. 이 중복된 항목들을 없애서 scores_unique.txt에 저장하라. (힌트: unique, sort)
+    - 1등부터 10등까지의 학생 이름을 한 줄씩 담고 있는 파일 top_ten.txt을 만들어라. (힌트: cut, sort)
+    (힌트: ``awk '{ print $2 " " $1 }'``를 통해 테이블의 첫번째와 두번째 열을 바꿔칠 수 있다.)
+
+---
+
+# 어디까지가 Bash의 영역인가?
+
+저렇게 힘들게 짠 명령어는 따로 파일에 저장해서 스크립트로 실행시킬 수 있다.
+
+```
+vim script.sh
+chmod +x script.sh
+./script.sh
+```
+
+하지만 너무 복잡한 일은 bash보다는 perl, python, 혹은 ruby와 같은 스크립팅 언어로 하는 것이 더 편리하다.
 
 ---
 
