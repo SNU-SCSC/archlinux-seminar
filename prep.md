@@ -83,6 +83,9 @@ Arch Linux 베이스를 기반으로 한 OS가 몇 개 있는데, 간편한 인�
 - Linux란?
 - Arch Linux 소개
     - DIY, KISS, RTFM
+- 연습
+    - Bash
+    - Vim
 - Arch Linux 설치 (Installation Guide 참고)
     - 인터넷 연결 확인하기
         - bash 기본 사용
